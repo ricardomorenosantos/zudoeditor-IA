@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZudoEditor - Documentação do Módulo de Geração de Vídeos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <style>
+        .documentation-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .documentation-container h1, 
+        .documentation-container h2, 
+        .documentation-container h3 {
+            color: #2196f3;
+            margin-top: 1.5em;
+        }
+        
+        .documentation-container code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        .documentation-container pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        
+        .documentation-container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .documentation-container th, 
+        .documentation-container td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        
+        .documentation-container th {
+            background-color: #f2f2f2;
+        }
+        
+        .documentation-container tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .documentation-container ul, 
+        .documentation-container ol {
+            padding-left: 25px;
+        }
+        
+        .documentation-container blockquote {
+            border-left: 4px solid #2196f3;
+            padding-left: 15px;
+            margin-left: 0;
+            color: #555;
+        }
+        
+        .toc {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        
+        .toc > ul {
+            padding-left: 0;
+        }
+        
+        .toc a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .toc a:hover {
+            color: #2196f3;
+        }
+        
+        .download-button {
+            display: inline-block;
+            background-color: #2196f3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .download-button:hover {
+            background-color: #0d8aee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ZudoEditor</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../documentacao.html">Documentação</a></li>
+                    <li><a href="../nova_funcionalidade.html">Nova Funcionalidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Documentação do Módulo de Geração de Vídeos</h1>
+                <p>Guia completo para usar o novo módulo de geração automática de vídeos com IA</p>
+            </div>
+        </section>
+
+        <section class="documentation-container">
+            <a href="../documentacao_modulo_geracao_videos.pdf" class="download-button">Baixar versão em PDF</a>
+            
+            <div class="toc">
+                <h2>Índice</h2>
+                <ul>
+                    <li><a href="#introducao">1. Introdução</a></li>
+                    <li><a href="#instalacao">2. Instalação e Requisitos</a></li>
+                    <li><a href="#visao-geral">3. Visão Geral do Módulo</a></li>
+                    <li><a href="#guia-uso">4. Guia de Uso</a></li>
+                    <li><a href="#interface">5. Interface de Linha de Comando</a></li>
+                    <li><a href="#personalizacao">6. Personalização</a></li>
+                    <li><a href="#integracao">7. Integração com o ZudoEditor</a></li>
+                    <li><a href="#solucao-problemas">8. Solução de Problemas</a></li>
+                    <li><a href="#faq">9. Perguntas Frequentes</a></li>
+                    <li><a href="#exemplos">10. Exemplos de Código</a></li>
+                </ul>
+            </div>
+            
+            <h2 id="introducao">1. Introdução</h2>
+            <p>O Módulo de Geração Automática de Vídeos com IA é uma nova funcionalidade do ZudoEditor que permite criar vídeos completos a partir de texto ou tópicos. Este módulo utiliza tecnologias de Inteligência Artificial para gerar narração com voz sintética, sincronizar legendas automaticamente e aplicar fundos visuais personalizáveis.</p>
+            
+            <p>Esta documentação fornece instruções detalhadas sobre como instalar, configurar e utilizar o módulo de geração de vídeos, bem como exemplos práticos de uso.</p>
+            
+            <h2 id="instalacao">2. Instalação e Requisitos</h2>
+            
+            <h3>2.1 Requisitos de Sistema</h3>
+            <ul>
+                <li><strong>Sistema Operacional</strong>: Windows 10/11, macOS 10.15+, ou Ubuntu 20.04+</li>
+                <li><strong>CPU</strong>: Processador quad-core moderno</li>
+                <li><strong>RAM</strong>: Mínimo de 8GB, recomendado 16GB</li>
+                <li><strong>Armazenamento</strong>: 2GB para bibliotecas e recursos + espaço para vídeos</li>
+                <li><strong>Python</strong>: Versão 3.8 ou superior</li>
+            </ul>
+            
+            <h3>2.2 Dependências</h3>
+            <p>O módulo de geração de vídeos depende das seguintes bibliotecas Python:</p>
+            
+            <pre>
+moviepy>=1.0.3
+numpy>=1.20.0
+pillow>=8.0.0
+pyttsx3>=2.90
+edge-tts>=6.1.3
+gtts>=2.3.0
+SpeechRecognition>=3.8.1
+transformers>=4.20.0 (opcional, para geração de roteiro)
+whisper>=1.1.10 (opcional, para transcrição avançada)
+            </pre>
+            
+            <h3>2.3 Instalação</h3>
+            <ol>
+                <li>Certifique-se de que o ZudoEditor já está instalado e funcionando corretamente.</li>
+                <li>Instale as dependências necessárias:
+                    <pre>pip install moviepy numpy pillow pyttsx3 edge-tts gtts SpeechRecognition</pre>
+                </li>
+                <li>Para funcionalidades avançadas (opcional):
+                    <pre>pip install transformers whisper</pre>
+                </li>
+                <li>Copie os arquivos do módulo para o diretório do ZudoEditor.</li>
+                <li>Crie os diretórios necessários para recursos e saída.</li>
+            </ol>
+            
+            <h2 id="visao-geral">3. Visão Geral do Módulo</h2>
+            
+            <p>O Módulo de Geração Automática de Vídeos com IA é composto por quatro componentes principais:</p>
+            
+            <ol>
+                <li><strong>Gerador de Roteiro</strong>: Cria um roteiro a partir de um tópico fornecido pelo usuário.</li>
+                <li><strong>Conversor Texto-Fala (TTS)</strong>: Transforma o texto do roteiro em narração de áudio.</li>
+                <li><strong>Seletor de Fundo Visual</strong>: Gerencia o fundo visual do vídeo (cor sólida, gradiente, imagem ou vídeo).</li>
+                <li><strong>Gerador de Legendas</strong>: Cria e sincroniza legendas com a narração.</li>
+            </ol>
+            
+            <h3>3.1 Fluxo de Trabalho</h3>
+            <p>O fluxo de trabalho típico do módulo é o seguinte:</p>
+            
+            <ol>
+                <li>O usuário fornece um texto ou tópico para o vídeo.</li>
+                <li>Se um tópico for fornecido, o sistema gera automaticamente um roteiro.</li>
+                <li>O texto é convertido em áudio usando o motor TTS selecionado.</li>
+                <li>Um fundo visual é selecionado (aleatoriamente ou conforme especificado pelo usuário).</li>
+                <li>As legendas são geradas e sincronizadas com o áudio.</li>
+                <li>Todos os elementos são combinados em um vídeo final.</li>
+                <li>O vídeo é exportado para a pasta de entrada do ZudoEditor para processamento adicional.</li>
+            </ol>
+            
+            <h2 id="guia-uso">4. Guia de Uso</h2>
+            
+            <h3>4.1 Usando o Módulo via Python</h3>
+            <p>Para usar o módulo em seu próprio código Python:</p>
+            
+            <pre>
+from video_generator_module import VideoGenerator, VideoGeneratorConfig
+
+# Criar configuração personalizada (opcional)
+config = VideoGeneratorConfig(
+    video_width=1920,
+    video_height=1080,
+    tts_engine="edge-tts",  # ou "pyttsx3", "gTTS"
+    subtitle_style="modern"  # ou "standard", "bold", "shadow", "outline", "minimal"
+)
+
+# Inicializar o gerador de vídeos
+generator = VideoGenerator(config)
+
+# Gerar vídeo a partir de texto
+video_path = generator.generate_video_from_text(
+    "Este é um exemplo de texto que será convertido em um vídeo com narração, legendas e fundo visual.",
+    "meu_video.mp4"
+)
+
+# Ou gerar vídeo a partir de um tópico
+video_path = generator.generate_video_from_topic(
+    "inteligência artificial",
+    "video_ia.mp4"
+)
+
+print(f"Vídeo gerado: {video_path}")
+            </pre>
+            
+            <h2 id="interface">5. Interface de Linha de Comando</h2>
+            
+            <p>O módulo inclui uma interface de linha de comando para facilitar o uso:</p>
+            
+            <h3>5.1 Comando "gerar"</h3>
+            <pre>
+python video_generator_module.py gerar [opções]
+            </pre>
+            
+            <p>Opções disponíveis:</p>
+            <ul>
+                <li><code>--texto</code>, <code>-t</code>: Texto para narração</li>
+                <li><code>--topico</code>, <code>-p</code>: Tópico para gerar roteiro automaticamente</li>
+                <li><code>--saida</code>, <code>-o</code>: Nome do arquivo de saída</li>
+                <li><code>--voz</code>, <code>-v</code>: ID da voz a ser usada</li>
+                <li><code>--motor</code>, <code>-m</code>: Motor TTS a ser usado</li>
+                <li><code>--estilo</code>, <code>-e</code>: Estilo de legenda</li>
+                <li><code>--fundo</code>, <code>-f</code>: Tipo de fundo</li>
+                <li><code>--fonte-fundo</code>, <code>-s</code>: Fonte do fundo (depende do tipo)</li>
+            </ul>
+            
+            <h3>5.2 Comando "listar"</h3>
+            <pre>
+python video_generator_module.py listar [opções]
+            </pre>
+            
+            <p>Opções disponíveis:</p>
+            <ul>
+                <li><code>--vozes</code>: Listar vozes disponíveis</li>
+                <li><code>--motores</code>: Listar motores TTS disponíveis</li>
+                <li><code>--estilos</code>: Listar estilos de legenda disponíveis</li>
+                <li><code>--fundos</code>: Listar tipos de fundo disponíveis</li>
+                <li><code>--cores</code>: Listar cores predefinidas</li>
+                <li><code>--gradientes</code>: Listar gradientes predefinidos</li>
+                <li><code>--imagens</code>: Listar imagens disponíveis</li>
+                <li><code>--videos</code>: Listar vídeos disponíveis</li>
+            </ul>
+            
+            <h2 id="personalizacao">6. Personalização</h2>
+            
+            <h3>6.1 Personalização de Voz</h3>
+            <p>O módulo suporta diferentes motores TTS, cada um com suas próprias vozes:</p>
+            <ul>
+                <li><strong>edge-tts</strong>: Oferece vozes de alta qualidade da Microsoft em vários idiomas</li>
+                <li><strong>pyttsx3</strong>: Funciona offline, usando as vozes instaladas no sistema</li>
+                <li><strong>gTTS</strong>: Usa o Google Text-to-Speech (requer internet)</li>
+            </ul>
+            
+            <h3>6.2 Personalização de Fundo</h3>
+            <p>O módulo suporta quatro tipos de fundo:</p>
+            <ul>
+                <li><strong>Cor sólida</strong>: Uma cor única para todo o vídeo</li>
+                <li><strong>Gradiente</strong>: Transição suave entre duas cores</li>
+                <li><strong>Imagem</strong>: Uma imagem estática como fundo</li>
+                <li><strong>Vídeo</strong>: Um vídeo como fundo (com loop se necessário)</li>
+            </ul>
+            
+            <h3>6.3 Personalização de Legendas</h3>
+            <p>O módulo oferece vários estilos de legenda predefinidos:</p>
+            <ul>
+                <li><strong>standard</strong>: Estilo padrão, texto branco simples</li>
+                <li><strong>bold</strong>: Texto branco em negrito, maior</li>
+                <li><strong>shadow</strong>: Texto branco com sombra</li>
+                <li><strong>outline</strong>: Texto branco com contorno preto</li>
+                <li><strong>modern</strong>: Texto branco com fundo semi-transparente e sombra suave</li>
+                <li><strong>minimal</strong>: Texto branco com contorno fino, fonte leve</li>
+            </ul>
+            
+            <h2 id="integracao">7. Integração com o ZudoEditor</h2>
+            
+            <h3>7.1 Fluxo de Integração</h3>
+            <ol>
+                <li>O módulo gera um vídeo completo com narração, legendas e fundo visual.</li>
+                <li>O vídeo é salvo na pasta de saída (<code>output/</code>) e também copiado para a pasta de entrada do ZudoEditor (<code>entrada/</code>).</li>
+                <li>O sistema de monitoramento de pasta do ZudoEditor detecta o novo vídeo.</li>
+                <li>O sistema de edição inteligente do ZudoEditor processa o vídeo conforme suas configurações.</li>
+                <li>O vídeo final é exportado para as plataformas configuradas.</li>
+            </ol>
+            
+            <h2 id="solucao-problemas">8. Solução de Problemas</h2>
+            
+            <h3>8.1 Problemas Comuns e Soluções</h3>
+            
+            <h4>Erro: "Falha ao gerar áudio"</h4>
+            <p><strong>Possíveis causas e soluções:</strong></p>
+            <ul>
+                <li><strong>Motor TTS não disponível</strong>: Tente usar um motor TTS diferente.</li>
+                <li><strong>Dependências ausentes</strong>: Verifique se todas as dependências estão instaladas.</li>
+                <li><strong>Sem conexão com a internet</strong>: Se estiver usando edge-tts ou gTTS, verifique sua conexão com a internet.</li>
+            </ul>
+            
+            <h4>Erro: "Falha ao gerar vídeo"</h4>
+            <p><strong>Possíveis causas e soluções:</strong></p>
+            <ul>
+                <li><strong>Dependências ausentes</strong>: Verifique se moviepy e suas dependências estão instaladas.</li>
+                <li><strong>FFmpeg ausente</strong>: MoviePy requer FFmpeg. Instale-o no seu sistema.</li>
+                <li><strong>Permissões de arquivo</strong>: Verifique se o usuário tem permissões para escrever nos diretórios de saída.</li>
+            </ul>
+            
+            <h2 id="faq">9. Perguntas Frequentes</h2>
+            
+            <h3>9.1 Geral</h3>
+            
+            <p><strong>P: O módulo funciona offline?</strong><br>
+            R: Parcialmente. O componente pyttsx3 funciona completamente offline, mas edge-tts e gTTS requerem conexão com a internet. A geração de roteiro com transformers funciona offline após o download inicial do modelo.</p>
+            
+            <p><strong>P: Quais idiomas são suport
+(Content truncated due to size limit. Use line ranges to read in chunks)

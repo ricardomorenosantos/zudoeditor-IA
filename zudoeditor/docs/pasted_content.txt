@@ -1,0 +1,79 @@
+Crie para mim um projeto completo e detalhado de um software automatizado que edita e posta diariamente vídeos curtos (Reels, Shorts e TikTok) para divulgar meus eBooks em múltiplas contas por plataforma.
+
+Objetivo principal:
+Eu quero apenas enviar vídeos crus (sem edição) para uma pasta designada, e o software faz tudo automaticamente: edita, adiciona legendas automáticas, insere chamadas para ação, cria descrições e hashtags, e publica nos melhores horários em várias contas e plataformas.
+
+Quero que você me entregue no mesmo documento:
+Descrição completa do projeto e funcionalidades obrigatórias:
+
+Upload automático de vídeos crus de uma pasta.
+
+Edição automática dos vídeos: cortes dinâmicos, melhoria de imagem, filtros simples, legendas automáticas por reconhecimento de voz, inserção de chamadas para ação (CTAs visuais).
+
+Adaptação automática do vídeo para o formato ideal de cada plataforma (Instagram Reels, YouTube Shorts, TikTok).
+
+Upload automático para múltiplas contas por plataforma.
+
+Criação automática de título, descrição e hashtags para cada vídeo e plataforma, baseado no conteúdo e no nicho de marketing digital / eBooks.
+
+Agendamento automático com opção de escolha de horários estratégicos com base em IA.
+
+Painel administrativo amigável para visualizar publicações programadas, vídeos processados e status das contas.
+
+Relatórios automáticos sobre engajamento: visualizações, curtidas e comentários.
+
+Suporte a dezenas ou centenas de contas conectadas.
+
+Sistema de segurança para armazenar dados de login de forma criptografada.
+
+Gerenciamento de sessões e cookies para evitar bloqueios.
+
+Sugestão de futuras expansões para outras redes sociais como Facebook Stories, Pinterest e Twitter.
+
+Roadmap de desenvolvimento completo:
+
+Fases de desenvolvimento do projeto: da ideia inicial à execução final.
+
+Possíveis desafios e como superar (exemplo: bloqueios das plataformas).
+
+Melhor arquitetura sugerida para o sistema.
+
+Sugestão profissional de tecnologias para construção do software:
+
+Backend recomendado (Node.js, Python etc.).
+
+Bibliotecas de edição de vídeo automáticas recomendadas.
+
+Ferramentas de automação de upload.
+
+Banco de dados recomendado para contas e publicações.
+
+Frameworks de frontend para o painel administrativo.
+
+Exemplo de código inicial:
+
+Não precisa ser o projeto inteiro, mas gere o início da estrutura de código para o sistema:
+Backend, automação de upload e edição automática dos vídeos.
+
+Layout visual do painel administrativo:
+
+Me descreva ou esboce como será o painel administrativo do software.
+
+Quais abas, botões e campos ele deve ter.
+
+Manual de uso do software:
+
+Crie um guia passo a passo para o usuário final.
+
+Desde o envio dos vídeos crus até o acompanhamento dos relatórios.
+
+Inclua possíveis erros e como solucioná-los.
+
+Sugestão de modelo de monetização futura:
+
+Caso eu queira transformar o software em um serviço SaaS no futuro, crie um modelo de negócios para venda de assinaturas do sistema para criadores de conteúdo e infoprodutores.
+
+🎯 Resumo da entrega que eu espero:
+Quero que você me entregue uma resposta única e completa, como se fosse um documento executivo para um time de desenvolvimento iniciar a construção do projeto, incluindo tudo o que descrevi acima para não precisar de novas perguntas. Seja o mais detalhado possível.
+
+O software precisa ser 100% automatizado. Meu único trabalho será enviar os vídeos crus para a pasta. Todo o restante — edição, criação de conteúdo, agendamento e postagem em várias contas de cada plataforma — será feito automaticamente pelo sistema.

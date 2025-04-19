@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZudoEditor - Geração Automática de Vídeos com IA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <style>
+        .feature-highlight {
+            background-color: #f0f8ff;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #2196f3;
+            margin-top: 0;
+        }
+        
+        .demo-video {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #2196f3;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #0d8aee;
+        }
+        
+        .workflow-steps {
+            counter-reset: step-counter;
+            margin: 30px 0;
+        }
+        
+        .workflow-step {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+        
+        .workflow-step:before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #2196f3;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ZudoEditor</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="documentacao.html">Documentação</a></li>
+                    <li><a href="#" class="active">Nova Funcionalidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Geração Automática de Vídeos com IA</h1>
+                <p>Transforme texto em vídeos completos com narração, legendas e fundos visuais em poucos cliques</p>
+                <a href="#saiba-mais" class="cta-button">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section id="saiba-mais" class="container">
+            <h2>Nova Funcionalidade: Gerador de Vídeos com IA</h2>
+            
+            <div class="feature-highlight">
+                <h3>Novidade!</h3>
+                <p>O ZudoEditor agora conta com um módulo de geração automática de vídeos que permite criar conteúdo completo a partir de texto ou tópicos, usando tecnologias de Inteligência Artificial para narração, legendas e fundos visuais.</p>
+            </div>
+            
+            <p>Criar vídeos para divulgar seus eBooks nunca foi tão fácil! Com o novo módulo de geração automática, você pode transformar qualquer texto em um vídeo profissional em questão de minutos, sem precisar de conhecimentos técnicos ou equipamentos especiais.</p>
+            
+            <h3>Como Funciona</h3>
+            
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <h4>Insira seu texto ou escolha um tópico</h4>
+                    <p>Você pode fornecer um texto pronto ou simplesmente indicar um tópico para que o sistema gere automaticamente um roteiro relevante.</p>
+                </div>
+                
+                <div class="workflow-step">
+                    <h4>Escolha a voz e o estilo visual</h4>
+                    <p>Selecione entre diversas vozes em português e outros idiomas, e personalize o fundo visual com cores, gradientes, imagens ou vídeos.</p>
+                </div>
+                
+                <div class="workflow-step">
+                    <h4>Gere o vídeo automaticamente</h4>
+                    <p>O sistema converte o texto em narração, sincroniza legendas e aplica o fundo visual escolhido para criar um vídeo completo.</p>
+                </div>
+                
+                <div class="workflow-step">
+                    <h4>Edição inteligente automática</h4>
+                    <p>O vídeo gerado é enviado automaticamente para o sistema de edição inteligente do ZudoEditor, que aplica cortes e transições de forma natural.</p>
+                </div>
+                
+                <div class="workflow-step">
+                    <h4>Publique em múltiplas plataformas</h4>
+                    <p>Após a edição, o vídeo está pronto para ser publicado nas plataformas configuradas, aumentando o alcance da divulgação dos seus eBooks.</p>
+                </div>
+            </div>
+            
+            <h3>Principais Recursos</h3>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Geração de Roteiro</h3>
+                    <p>Crie roteiros automaticamente a partir de tópicos simples, economizando tempo na criação de conteúdo.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Narração com Voz Sintética</h3>
+                    <p>Converta texto em fala natural usando tecnologias avançadas de síntese de voz em português e outros idiomas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Legendas Sincronizadas</h3>
+                    <p>Adicione legendas perfeitamente sincronizadas com a narração, aumentando a acessibilidade e o engajamento.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Fundos Visuais Personalizáveis</h3>
+                    <p>Escolha entre cores sólidas, gradientes, imagens ou vídeos como fundo para seus vídeos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Integração Perfeita</h3>
+                    <p>Funciona perfeitamente com o sistema existente de edição inteligente e publicação automática.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>100% Gratuito</h3>
+                    <p>Todas as funcionalidades são gratuitas e utilizam tecnologias de código aberto, sem custos adicionais.</p>
+                </div>
+            </div>
+            
+            <h3>Exemplos de Uso</h3>
+            
+            <p>O módulo de geração automática de vídeos é ideal para:</p>
+            
+            <ul>
+                <li>Criar teasers para divulgar seus eBooks em redes sociais</li>
+                <li>Produzir vídeos explicativos sobre os temas abordados em seus livros</li>
+                <li>Gerar conteúdo regular para manter seu canal ativo</li>
+                <li>Transformar capítulos ou trechos de seus livros em vídeos</li>
+                <li>Criar anúncios para promover lançamentos ou promoções</li>
+            </ul>
+            
+            <h3>Tecnologias Utilizadas</h3>
+            
+            <p>O módulo de geração de vídeos utiliza tecnologias gratuitas e de código aberto:</p>
+            
+            <ul>
+                <li><strong>Síntese de Voz:</strong> pyttsx3, edge-tts, gTTS</li>
+                <li><strong>Processamento de Vídeo:</strong> MoviePy, OpenCV</li>
+                <li><strong>Processamento de Linguagem:</strong> spaCy, Transformers</li>
+                <li><strong>Reconhecimento de Fala:</strong> Whisper, SpeechRecognition</li>
+            </ul>
+            
+            <h3>Começando a Usar</h3>
+            
+            <p>Para começar a usar o módulo de geração automática de vídeos:</p>
+            
+            <ol>
+                <li>Atualize o ZudoEditor para a versão mais recente</li>
+                <li>Acesse a nova opção "Gerar Vídeo" no menu principal</li>
+                <li>Insira seu texto ou escolha um tópico</li>
+                <li>Personalize as opções de voz, legenda e fundo visual</li>
+                <li>Clique em "Gerar" e aguarde o processamento</li>
+            </ol>
+            
+            <p>Para usuários avançados, também é possível utilizar a interface de linha de comando ou integrar o módulo em seus próprios scripts Python.</p>
+            
+            <a href="documentacao_modulo_geracao_videos.pdf" class="cta-button">Baixar Documentação Completa</a>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre o ZudoEditor</h3>
+                    <p>Software automatizado de edição e publicação de vídeos curtos para divulgar seus eBooks em múltiplas plataformas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: rickmorenosan@gmail.com</p>
+                    <p>Telefone: (11) 94746-9855</p>
+                    <a href="https://wa.me/5511947469855" class="whatsapp-button">WhatsApp</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="documentacao.html">Documentação</a></li>
+                        <li><a href="tutorial_completo.pdf">Tutorial em PDF</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZudoEditor. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

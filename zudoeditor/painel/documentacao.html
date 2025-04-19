@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Software de Automação de Vídeos para eBooks</title>
+    <meta name="description" content="Documentação completa do software automatizado para edição e publicação de vídeos curtos para divulgação de eBooks.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">VideoBook Automação</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#recursos">Recursos</a></li>
+                    <li><a href="index.html#como-funciona">Como Funciona</a></li>
+                    <li><a href="index.html#planos">Planos</a></li>
+                    <li><a href="documentacao.html">Documentação</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container docs-container">
+                <aside class="docs-sidebar">
+                    <ul class="docs-menu">
+                        <li>
+                            <a href="#descricao">Descrição do Projeto</a>
+                            <ul class="submenu">
+                                <li><a href="#visao-geral">Visão Geral</a></li>
+                                <li><a href="#objetivos">Objetivos Principais</a></li>
+                                <li><a href="#funcionalidades">Funcionalidades Principais</a></li>
+                                <li><a href="#beneficios">Benefícios</a></li>
+                                <li><a href="#publico-alvo">Público-Alvo</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#arquitetura">Arquitetura do Sistema</a>
+                            <ul class="submenu">
+                                <li><a href="#visao-arquitetura">Visão Geral da Arquitetura</a></li>
+                                <li><a href="#componentes">Componentes do Sistema</a></li>
+                                <li><a href="#banco-dados">Banco de Dados</a></li>
+                                <li><a href="#interface">Interface do Usuário</a></li>
+                                <li><a href="#seguranca">Segurança</a></li>
+                                <li><a href="#requisitos">Requisitos de Sistema</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#roadmap">Roadmap de Desenvolvimento</a>
+                            <ul class="submenu">
+                                <li><a href="#fases">Visão Geral das Fases</a></li>
+                                <li><a href="#fase1">Fase 1: Fundação</a></li>
+                                <li><a href="#fase2">Fase 2: Automação Core</a></li>
+                                <li><a href="#fase3">Fase 3: Expansão</a></li>
+                                <li><a href="#fase4">Fase 4: Inteligência</a></li>
+                                <li><a href="#fase5">Fase 5: Refinamento</a></li>
+                                <li><a href="#desafios">Desafios e Mitigações</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#painel">Design do Painel Administrativo</a>
+                            <ul class="submenu">
+                                <li><a href="#visao-painel">Visão Geral da Interface</a></li>
+                                <li><a href="#estrutura-painel">Estrutura do Painel</a></li>
+                                <li><a href="#telas">Telas Principais</a></li>
+                                <li><a href="#tecnologias-painel">Tecnologias Recomendadas</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#codigo">Exemplos de Código</a>
+                            <ul class="submenu">
+                                <li><a href="#monitor">Monitoramento de Pasta</a></li>
+                                <li><a href="#processador">Processamento de Vídeo</a></li>
+                                <li><a href="#upload">Automação de Upload</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#manual">Manual do Usuário</a>
+                            <ul class="submenu">
+                                <li><a href="#instalacao">Instalação e Configuração</a></li>
+                                <li><a href="#uso-diario">Uso Diário</a></li>
+                                <li><a href="#painel-admin">Painel Administrativo</a></li>
+                                <li><a href="#solucao-problemas">Solução de Problemas</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#monetizacao">Estratégia de Monetização</a>
+                            <ul class="submenu">
+                                <li><a href="#modelos">Modelos de Monetização</a></li>
+                                <li><a href="#precos">Estrutura de Preços</a></li>
+                                <li><a href="#lancamento">Estratégia de Lançamento</a></li>
+                                <li><a href="#retencao">Retenção e Expansão</a></li>
+                                <li><a href="#projecoes">Projeções Financeiras</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+
+                <div class="docs-content">
+                    <h1>Documentação Completa</h1>
+                    <p>Esta documentação apresenta todos os detalhes do Software Automatizado de Edição e Publicação de Vídeos para Divulgação de eBooks, incluindo descrição do projeto, arquitetura, roadmap de desenvolvimento, design do painel administrativo, exemplos de código, manual do usuário e estratégia de monetização.</p>
+
+                    <section id="descricao">
+                        <h2>Descrição do Projeto</h2>
+                        
+                        <div id="visao-geral">
+                            <h3>Visão Geral</h3>
+                            <p>O Software Automatizado de Edição e Publicação de Vídeos é uma solução completa que automatiza todo o fluxo de trabalho de criação e distribuição de conteúdo em vídeo para promover eBooks. O sistema monitora uma pasta designada para novos vídeos, processa-os automaticamente com edições profissionais, e os publica em múltiplas plataformas sociais (YouTube, Instagram e TikTok) em horários otimizados para maximizar o engajamento.</p>
+                        </div>
+
+                        <div id="objetivos">
+                            <h3>Objetivos Principais</h3>
+                            <ul>
+                                <li>Automatizar completamente o processo de edição de vídeos para diferentes plataformas</li>
+                                <li>Gerenciar múltiplas contas em diversas plataformas sociais</li>
+                                <li>Otimizar horários de publicação para maximizar engajamento</li>
+                                <li>Gerar legendas, títulos, descrições e hashtags automaticamente</li>
+                                <li>Fornecer análises detalhadas de desempenho</li>
+                                <li>Minimizar custos utilizando tecnologias gratuitas e de código aberto</li>
+                            </ul>
+                        </div>
+
+                        <div id="funcionalidades">
+                            <h3>Funcionalidades Principais</h3>
+                            
+                            <h4>Monitoramento e Detecção</h4>
+                            <ul>
+                                <li>Monitoramento automático de pasta para novos vídeos</li>
+                                <li>Detecção de formatos compatíveis</li>
+                                <li>Verificação de qualidade e integridade</li>
+                            </ul>
+
+                            <h4>Processamento de Vídeo</h4>
+                            <ul>
+                                <li>Edição automática baseada em templates</li>
+                                <li>Geração de legendas por reconhecimento de fala</li>
+                                <li>Adaptação para diferentes formatos de plataforma (9:16, 16:9, 1:1)</li>
+                                <li>Adição de chamadas para ação (CTAs) e marca d'água</li>
+                                <li>Aplicação de filtros e efeitos visuais</li>
+                                <li>Integração opcional com CapCut</li>
+                            </ul>
+
+                            <h4>Gerenciamento de Contas</h4>
+                            <ul>
+                                <li>Suporte para múltiplas contas por plataforma</li>
+                                <li>Rotação inteligente de contas para evitar bloqueios</li>
+                                <li>Monitoramento de saúde das contas</li>
+                                <li>Suporte a proxies para maior segurança</li>
+                            </ul>
+
+                            <h4>Publicação Automatizada</h4>
+                            <ul>
+                                <li>Agendamento inteligente baseado em horários ótimos</li>
+                                <li>Geração automática de títulos, descrições e hashtags</li>
+                                <li>Upload simultâneo para múltiplas plataformas</li>
+                                <li>Verificação de sucesso de publicação</li>
+                            </ul>
+
+                            <h4>Análise e Relatórios</h4>
+                            <ul>
+                                <li>Rastreamento de métricas de engajamento</li>
+                                <li>Relatórios detalhados por plataforma e conta</li>
+                                <li>Análise de desempenho por horário e tipo de conteúdo</li>
+                                <li>Recomendações para otimização</li>
+                            </ul>
+                        </div>
+
+                        <div id="beneficios">
+                            <h3>Benefícios</h3>
+                            <ul>
+                                <li><strong>Economia de tempo</strong>: Redução de 90% no tempo gasto com edição e publicação</li>
+                                <li><strong>Consistência</strong>: Manutenção de padrão visual e qualidade em todos os vídeos</li>
+                                <li><strong>Alcance ampliado</strong>: Presença simultânea em múltiplas plataformas</li>
+                                <li><strong>Otimização</strong>: Publicação nos melhores horários para maximizar engajamento</li>
+                                <li><strong>Escalabilidade</strong>: Capacidade de gerenciar dezenas ou centenas de contas</li>
+                                <li><strong>Economia financeira</strong>: Eliminação da necessidade de contratar editores de vídeo</li>
+                            </ul>
+                        </div>
+
+                        <div id="publico-alvo">
+                            <h3>Público-Alvo</h3>
+                            <ul>
+                                <li>Autores independentes de eBooks</li>
+                                <li>Pequenas editoras digitais</li>
+                                <li>Criadores de conteúdo educacional</li>
+                                <li>Profissionais de marketing de conteúdo</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="arquitetura">
+                        <h2>Arquitetura do Sistema</h2>
+                        
+                        <div id="visao-arquitetura">
+                            <h3>Visão Geral da Arquitetura</h3>
+                            <p>O sistema segue uma arquitetura modular composta por cinco componentes principais que trabalham em conjunto para fornecer um fluxo de trabalho automatizado completo:</p>
+                            <ol>
+                                <li><strong>Módulo de Monitoramento</strong>: Detecta novos vídeos e inicia o processamento</li>
+                                <li><strong>Módulo de Processamento</strong>: Edita e adapta vídeos para diferentes plataformas</li>
+                                <li><strong>Módulo de Gerenciamento de Contas</strong>: Administra credenciais e estado das contas</li>
+                                <li><strong>Módulo de Publicação</strong>: Gerencia uploads e agendamento</li>
+                                <li><strong>Módulo de Análise</strong>: Coleta e processa métricas de desempenho</li>
+                            </ol>
+                            <p>Estes módulos são coordenados por um sistema central que gerencia o fluxo de trabalho e mantém o estado do sistema.</p>
+                            
+                            <pre>
+┌─────────────────────────────────────────────────────────────────┐
+│                      Interface do Usuário                        │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────┐ │
+│  │  Dashboard  │  │ Gerenciador │  │ Calendário  │  │ Config. │ │
+│  │             │  │  de Vídeos  │  │             │  │         │ │
+│  └─────────────┘  └─────────────┘  └─────────────┘  └─────────┘ │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────┼─────────────────────────────────────┐
+│                           │                                      │
+│         ┌─────────────────▼────────────────────┐                │
+│         │        Controlador Principal         │                │
+│         └─────────────────┬────────────────────┘                │
+│                           │                                      │
+│  ┌────────────┐ ┌─────────┴──────────┐ ┌────────────────────┐   │
+│  │  Módulo de │ │     Módulo de      │ │      Módulo de     │   │
+│  │Monitoramento◄─►   Processamento   ├─►     Publicação     │   │
+│  └────────────┘ └─────────┬──────────┘ └──────────┬─────────┘   │
+│                           │                       │             │
+│                 ┌─────────┴───────────┐           │             │
+│                 │      Módulo de      │           │             │
+│                 │   Gerenciamento     ◄───────────┘             │
+│                 │     de Contas       │                         │
+│                 └─────────┬───────────┘                         │
+│                           │                                     │
+│                 ┌─────────▼───────────┐                         │
+│                 │      Módulo de      │                         │
+│                 │       Análise       │                         │
+│                 └─────────────────────┘                         │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+</pre>
+                        </div>
+
+                        <div id="componentes">
+                            <h3>Componentes do Sistema</h3>
+                            
+                            <h4>Módulo de Monitoramento</h4>
+                            <ul>
+                           
+(Content truncated due to size limit. Use line ranges to read in chunks)
